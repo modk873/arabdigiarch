@@ -22,8 +22,9 @@
 body {
     font-family: 'Tajawal', sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--dark-color);
+    background-color: #ffffff; /* خلفية بيضاء */
+    color: #006400; /* نص أخضر غامق */
+}
 }
 
 .container {
