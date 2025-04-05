@@ -1,29 +1,23 @@
-/* Global Styles */
 :root {
-    --primary-color: #e3e1dd;
-    --secondary-color: #374151;
+    --primary-color: #1a501c; /* أخضر غامق */
+    --secondary-color: ##1a501c; /* أخضر غامق */
     --accent-color: #f59e0b;
-    --dark-color: #374151;
-    --darker-color: #374151;
-    --light-color: #1f2937;
-    --text-color: #e3e1dd;
+    --dark-color: #155417; /* أخضر غامق */
+    --darker-color: #1a501c; /* أخضر غامق */
+    --light-color: #ffffff;
+    --text-color: #ffffff; /* نص أبيض */
     --text-muted: #9ca3af;
     --border-radius: 8px;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     --transition: all 0.3s ease;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Tajawal', sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--dark-color);
+    background-color: #006400; /* أخضر غامق */
+    color: #ffffff; /* نص أبيض */
+}
 }
 
 .container {
@@ -191,7 +185,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .country-card {
-    background-color: var(--light-color);
+    background-color: #04300e;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
