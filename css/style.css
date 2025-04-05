@@ -1,29 +1,22 @@
-/* Global Styles */
 :root {
-    --primary-color: #006400;
-    --secondary-color: #006400;
+    --primary-color: #006400; /* أخضر غامق */
+    --secondary-color: #006400; /* أخضر غامق */
     --accent-color: #f59e0b;
-    --dark-color: #006400;
-    --darker-color: #374151;
+    --dark-color: #006400; /* أخضر غامق */
+    --darker-color: #006400; /* أخضر غامق */
     --light-color: #1f2937;
-    --text-color: #ffffff;
+    --text-color: #ffffff; /* نص أبيض */
     --text-muted: #9ca3af;
     --border-radius: 8px;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     --transition: all 0.3s ease;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Tajawal', sans-serif;
     line-height: 1.6;
-    background-color: #ffffff; /* خلفية بيضاء */
-    color: #006400; /* نص أخضر غامق */
+    background-color: #006400; /* أخضر غامق */
+    color: #ffffff; /* نص أبيض */
 }
 }
 
