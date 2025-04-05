@@ -1,12 +1,12 @@
 /* Global Styles */
 :root {
-    --primary-color: #e3e1dd;
+    --primary-color: #006400;
     --secondary-color: #374151;
     --accent-color: #f59e0b;
     --dark-color: #374151;
     --darker-color: #374151;
     --light-color: #1f2937;
-    --text-color: #e3e1dd;
+    --text-color: #ffffff;
     --text-muted: #9ca3af;
     --border-radius: 8px;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
