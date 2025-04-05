@@ -1,191 +1,185 @@
-/* إعدادات عامة */
-body {
-    background-color: #ffffff; /* خلفية بيضاء */
-    color: #006400; /* نص أخضر غامق */
-    font-family: 'Tajawal', sans-serif;
+/* ================================
+   General Styles
+================================= */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
 }
 
-/* تنسيق الـ Header */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================================
+   Header Styles
+================================= */
 header {
-    background-color: #ffffff; /* خلفية بيضاء */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 header .logo h1 {
-    color: #006400; /* نص الشعار باللون الأخضر الغامق */
-    margin: 0;
-    text-align: center;
-    font-size: 2rem;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 header nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
 }
 
 header nav ul li a {
-    color: #006400; /* روابط الأخضر الغامق */
     text-decoration: none;
-    font-size: 1.1rem;
-    padding: 8px 16px;
-    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header nav ul li a.active {
+    color: #ff9800;
 }
 
 header nav ul li a:hover {
-    color: #ff8c00; /* برتقالي عند التمرير */
-    background-color: rgba(255, 140, 0, 0.1);
+    color: #ff9800;
 }
 
-/* تنسيق الأزرار */
-.btn {
-    background-color: #ff8c00; /* برتقالي */
-    color: white;
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1rem;
-    display: inline-block;
-}
-
-.btn:hover {
-    background-color: #e07b00; /* برتقالي داكن عند التمرير */
-}
-
-/* تعديل قسم الـ Hero */
+/* ================================
+   Hero Section Styles
+================================= */
 .hero {
-    background-color: #f4f4f4; /* خلفية فاتحة للقسم */
-    padding: 50px 0;
+    background-color: #4CAF50;
+    color: #fff;
     text-align: center;
+    padding: 80px 20px;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    color: #006400; /* نص أخضر غامق */
-    margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 30px;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-.hero-buttons a {
+.hero .hero-buttons .btn {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
     margin: 0 10px;
 }
 
-/* تعديل مظهر الأقسام */
+.hero .hero-buttons .btn:hover {
+    background-color: #e68900;
+}
+
+/* ================================
+   Country Section Styles
+================================= */
 .countries {
-    padding: 50px 0;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .countries .section-title {
-    font-size: 2rem;
-    color: #006400; /* نص أخضر غامق */
+    font-size: 28px;
     margin-bottom: 30px;
 }
 
-.countries-grid {
+.countries .countries-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    padding: 0 10px;
 }
 
 .country-card {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
+    background-color: #fff;
     padding: 20px;
-    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.country-card:hover {
-    transform: translateY(-5px); /* تأثير التحريك عند التمرير */
-}
-
-.country-image {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
+.country-card h3 {
+    font-size: 24px;
     margin-bottom: 15px;
+}
+
+.country-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.country-card .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
     border-radius: 5px;
+    font-weight: 500;
 }
 
-.qatar-img {
-    background-image: url('images/qatar.jpg');
+.country-card .btn:hover {
+    background-color: #45a049;
 }
 
-.jordan-img {
-    background-image: url('images/jordan.jpg');
-}
-
-.sudan-img {
-    background-image: url('images/sudan.jpg');
-}
-
-.palestine-img {
-    background-image: url('images/palestine.jpg');
-}
-
-/* خصائص الفوتر */
+/* ================================
+   Footer Section Styles
+================================= */
 footer {
-    background-color: #f1f1f1;
-    color: #006400; /* نص الفوتر باللون الأخضر الغامق */
-    padding: 40px 20px;
-    text-align: center;
-}
-
-footer .social-links a {
-    color: #006400;
-    margin: 0 10px;
-    font-size: 1.5rem;
-}
-
-footer .social-links a:hover {
-    color: #ff8c00; /* برتقالي عند التمرير */
-}
-
-/* النص في الفوتر */
-footer .footer-logo h3 {
-    font-size: 1.5rem;
-    color: #006400;
-    margin-bottom: 10px;
-}
-
-footer .footer-bottom {
-    margin-top: 30px;
-    font-size: 0.9rem;
-    color: #333;
-}
-
-/* إضافة بعض التنسيقات للصور داخل الـ showcase */
-.showcase-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-/* تحسين مظهر زر الـ "تواصل معنا" */
-.showcase-cta {
+    background-color: #333;
+    color: #fff;
     padding: 30px 0;
     text-align: center;
 }
 
-.showcase-cta p {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 20px;
+footer p {
+    font-size: 16px;
+}
+
+/* ================================
+   Media Queries for Responsive Design
+================================= */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .countries .countries-grid {
+        grid-template-columns: 1fr;
+    }
 }
