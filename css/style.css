@@ -185,7 +185,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .country-card {
-    background-color: var(--light-color);
+    background-color: #04300e;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
