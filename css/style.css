@@ -1,80 +1,191 @@
-/* تغيير خلفية الموقع */
+/* إعدادات عامة */
 body {
     background-color: #ffffff; /* خلفية بيضاء */
-    color: #006400; /* نص بلون أخضر غامق */
+    color: #006400; /* نص أخضر غامق */
     font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* تغيير لون الروابط (النصوص في الأزرار) */
-a {
-    color: #006400; /* أخضر غامق */
+/* تنسيق الـ Header */
+header {
+    background-color: #ffffff; /* خلفية بيضاء */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+header .logo h1 {
+    color: #006400; /* نص الشعار باللون الأخضر الغامق */
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #006400; /* روابط الأخضر الغامق */
     text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
 }
 
-a:hover {
-    color: #ff8c00; /* اللون البرتقالي عند المرور بالماوس */
+header nav ul li a:hover {
+    color: #ff8c00; /* برتقالي عند التمرير */
+    background-color: rgba(255, 140, 0, 0.1);
 }
 
-/* تغيير الأزرار */
+/* تنسيق الأزرار */
 .btn {
     background-color: #ff8c00; /* برتقالي */
-    color: white; /* نص أبيض داخل الأزرار */
-    padding: 10px 20px;
+    color: white;
+    padding: 12px 20px;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
+    font-size: 1rem;
     display: inline-block;
-    font-size: 16px;
 }
 
 .btn:hover {
     background-color: #e07b00; /* برتقالي داكن عند التمرير */
 }
 
-/* تغيير خلفية الـ header */
-header {
-    background-color: #ffffff; /* خلفية بيضاء */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* تعديل قسم الـ Hero */
+.hero {
+    background-color: #f4f4f4; /* خلفية فاتحة للقسم */
+    padding: 50px 0;
+    text-align: center;
 }
 
-header .logo h1 {
-    color: #006400; /* نص الأخضر الغامق في الشعار */
+.hero h2 {
+    font-size: 2.5rem;
+    color: #006400; /* نص أخضر غامق */
+    margin-bottom: 20px;
 }
 
-header nav ul li a {
-    color: #006400; /* الأخضر الغامق في الروابط */
+.hero p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
 }
 
-header nav ul li a:hover {
-    color: #ff8c00; /* برتقالي عند التمرير */
+.hero-buttons a {
+    margin: 0 10px;
 }
 
-/* تغيير لون الـ footer */
-footer {
-    background-color: #f1f1f1; /* خلفية فاتحة للـ footer */
-    color: #006400; /* لون النص الأخضر الغامق */
+/* تعديل مظهر الأقسام */
+.countries {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.countries .section-title {
+    font-size: 2rem;
+    color: #006400; /* نص أخضر غامق */
+    margin-bottom: 30px;
+}
+
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.country-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
     padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.country-card:hover {
+    transform: translateY(-5px); /* تأثير التحريك عند التمرير */
+}
+
+.country-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.qatar-img {
+    background-image: url('images/qatar.jpg');
+}
+
+.jordan-img {
+    background-image: url('images/jordan.jpg');
+}
+
+.sudan-img {
+    background-image: url('images/sudan.jpg');
+}
+
+.palestine-img {
+    background-image: url('images/palestine.jpg');
+}
+
+/* خصائص الفوتر */
+footer {
+    background-color: #f1f1f1;
+    color: #006400; /* نص الفوتر باللون الأخضر الغامق */
+    padding: 40px 20px;
     text-align: center;
 }
 
 footer .social-links a {
-    color: #006400; /* أخضر غامق في الروابط الاجتماعية */
+    color: #006400;
+    margin: 0 10px;
+    font-size: 1.5rem;
 }
 
 footer .social-links a:hover {
     color: #ff8c00; /* برتقالي عند التمرير */
 }
 
-/* تغيير ألوان القسم الذي يحتوي على الدول */
-.countries .country-card h3 {
-    color: #006400; /* أخضر غامق */
+/* النص في الفوتر */
+footer .footer-logo h3 {
+    font-size: 1.5rem;
+    color: #006400;
+    margin-bottom: 10px;
 }
 
-.countries .country-card a {
-    background-color: #ff8c00; /* برتقالي */
-    color: white; /* نص أبيض */
+footer .footer-bottom {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #333;
 }
 
-.countries .country-card a:hover {
-    background-color: #e07b00; /* برتقالي داكن عند التمرير */
+/* إضافة بعض التنسيقات للصور داخل الـ showcase */
+.showcase-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* تحسين مظهر زر الـ "تواصل معنا" */
+.showcase-cta {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.showcase-cta p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
 }
